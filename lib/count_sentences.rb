@@ -22,10 +22,9 @@ class String
     #self.split(/\.|\?|\!/).size
     n = 0; count = 0 
     while n < self.length
-      if self[n] == "." ||self[n] == "!" || self[n] == "?" 
-        if self[n + 1] != "." && self[n +1] != "!" && self[n + 1] != "?"
+      if (self[n] == "." ||self[n] == "!" || self[n] == "?") &&  (self[n + 1] != "." && self[n +1] != "!" && self[n + 1] != "?")
           count +=1
-        end  
+          
       end
       n += 1
     end
